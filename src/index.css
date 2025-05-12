@@ -1,0 +1,35 @@
+body {
+  background: #111;
+  padding: 1rem;
+}
+html {
+  color: white;
+  font-family: sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1ch;
+}
+.episodes ol {
+  list-style: none;
+}
+
+.episodes li {
+  padding: 0.5rem;
+}
+
+.episodes li:hover,
+.episodes li.selected {
+  background: #333;
+  cursor: pointer;
+}
+
+.episodes li:not(:last-child) {
+  border-bottom: 1px solid #333;
+}
